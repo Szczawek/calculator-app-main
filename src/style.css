@@ -1,0 +1,182 @@
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --toolls-color: hsl(52, 100%, 62%);
+  --button-remove-shadow: hsl(285, 91%, 52%);
+  --button-equals-color: hsl(198, 20%, 13%);
+  --button-config: 0 4px 2px;
+  --button-equals-shadow: hsl(177, 92%, 70%);
+  --button-equals-bgc: hsl(176, 100%, 44%);
+  --button-remove-bgc: hsl(281, 89%, 26%);
+  --button-number-shadow: hsl(290, 70%, 36%);
+  --button-number-bgc: hsl(268, 47%, 21%);
+  --special-font-color: hsl(52, 100%, 62%);
+  --body-bgc: hsl(268, 75%, 9%);
+  --main-element-bgc: hsl(268, 71%, 12%);
+  --screen-bgc: hsl(268, 71%, 12%);
+  --screen-color: hsl(52, 100%, 62%);
+}
+html {
+  color-scheme: light dark;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  border: none;
+  background-color: transparent;
+  display: block;
+}
+
+body {
+  background-color: var(--body-bgc);
+  font-family: "League Spartan", sans-serif;
+}
+body > div {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+}
+/* Case */
+.case {
+  margin-inline:auto;
+  width: clamp(200px, 95vw,580px);
+  padding: 1em;
+  display: grid;
+  row-gap: 1em;
+  grid-template-rows: 13% 13% 74%;
+  border-radius: 8px;
+  height: 650px;
+}
+.screen-case,
+.keyboard {
+  padding: 2em;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+/* Toolls */
+.toolls-bar {
+  align-items: center;
+  color: var(--toolls-color);
+  display: flex;
+  justify-content: space-between;
+}
+.toolls-bar > div {
+  display: grid;
+  grid-template-areas:
+    ". num"
+    "topic btn";
+    column-gap: 2em;
+    align-items: center;
+    row-gap: .3em;
+    grid-template-rows: repeat(2, max-content);
+}
+.toolls-bar > div > div,.topic {
+  font-size: .9em;
+} 
+
+.toolls-bar > div > div {
+  display: flex;
+  grid-area: num;
+  justify-content: space-around;
+}
+.topic {
+  grid-area: topic;
+}
+.style-slide {
+width: 5.2em;
+height: 1.8em;
+padding-inline: .5em;
+  border-radius: 1em;
+  grid-area: btn;
+  background-color: var(--main-element-bgc);
+}
+.slide-circle {
+  width: 1.2em;
+  transition: filter 250ms;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: var(--button-equals-bgc);
+}
+.slide-circle:hover {
+  filter: brightness(150%);
+}
+
+/* Screen */
+.screen-case {
+  align-items: center;
+  row-gap: .3em;
+  color: var(--screen-color);
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: var(--screen-bgc);
+}
+
+.screen-case > p {
+  text-align: right;
+word-break:break-all;
+}
+
+.screen {
+   font-size: 1.8em;
+}
+/* keyboard */
+.keyboard {
+  background-color: var(--main-element-bgc);
+  display: grid;
+  grid-template-rows: 80% 20%;
+  row-gap: 5%;
+}
+/* set up button */
+.in-put-key,
+.out-put-key {
+  display: grid;
+  gap: 5%;
+}
+.keyboard button {
+  border-radius: 6px;
+  height: 3.4rem;
+  transition:  filter 250ms;
+  font-weight: 800;
+  font-size: 1.4em;
+}
+.keyboard button:hover {
+ filter: brightness(150%);
+} 
+.in-put-key {
+  grid-template-columns: repeat(4, 1fr);
+}
+.in-put-key > button:not(.delete) {
+  box-shadow: var(--button-config) var(--button-number-shadow);
+  background-color: var(--button-number-bgc);
+}
+.out-put-key {
+  grid-template-columns: repeat(2, 1fr);
+}
+.reset,
+.delete {
+  box-shadow: var(--button-config) var(--button-remove-shadow);
+  background-color: var(--button-remove-bgc);
+}
+.equals {
+  box-shadow: var(--button-config) var(--button-equals-shadow);
+  color: var(--button-equals-color);
+  background-color: var(--button-equals-bgc);
+}
+
+.in-put-key > button:not(.delete) {
+  color: var(--special-font-color);
+}
+button[class="delete"] , .out-put-key > button {
+  font-size: .9em;
+}

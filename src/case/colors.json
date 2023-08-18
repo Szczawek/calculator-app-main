@@ -1,0 +1,57 @@
+[
+  {
+    "type": 0,
+    "color": {
+      "--button-remove-shadow": "hsl(224, 28%, 35%)",
+      "--button-equals-color": " hsl(0, 0%, 100%)",
+      "--button-equals-shadow": "hsl(6, 70%, 34%)",
+      "--button-equals-bgc": "hsl(6, 63%, 50%)",
+      "--button-remove-bgc": "hsl(225, 21%, 49%)",
+      "--button-number-shadow": "hsl(28, 16%, 65%",
+      "--button-number-bgc": " hsl(30, 25%, 89%)",
+      "--special-font-color": " hsl(221, 14%, 31%)",
+      "--body-bgc": "hsl(222, 26%, 31%)",
+      "--main-element-bgc": "hsl(223, 31%, 20%)",
+      "--screen-bgc": "hsl(224, 36%, 15%)",
+      "--toolls-color": "hsl(0, 0%, 100%)",
+      "--screen-color":"hsl(0, 0%, 100%)"
+
+    }
+  },
+  {
+    "type": 1,
+    "color": {
+      "--button-remove-shadow": "hsl(185, 58%, 25%)",
+      "--button-equals-color": "  hsl(0, 0%, 100%)",
+      "--button-equals-shadow": " hsl(25, 99%, 27%)",
+      "--button-equals-bgc": "hsl(25, 98%, 40%)",
+      "--button-remove-bgc": " hsl(185, 42%, 37%)",
+      "--button-number-shadow":  "hsl(35, 11%, 61%)",
+      "--button-number-bgc": "hsl(45, 7%, 89%)",
+      "--special-font-color": "hsl(60, 10%, 19%)",
+      "--body-bgc": "hsl(0, 0%, 90%)",
+      "--main-element-bgc": "hsl(0, 5%, 81%)",
+      "--screen-bgc": "  hsl(0, 0%, 93%)",
+      "--toolls-color": "  hsl(60, 10%, 19%)",
+      "--screen-color":"  hsl(60, 10%, 19%)"
+    }
+  },
+  {
+    "type": 2,
+    "color": {
+      "--button-remove-shadow": "hsl(285, 91%, 52%)",
+      "--button-equals-color": " hsl(198, 20%, 13%)",
+      "--button-equals-shadow": "hsl(177, 92%, 70%)",
+      "--button-equals-bgc": "hsl(176, 100%, 44%)",
+      "--button-remove-bgc": "hsl(281, 89%, 26%)",
+      "--button-number-shadow": "hsl(290, 70%, 36%)",
+      "--button-number-bgc": "hsl(268, 47%, 21%)",
+      "--special-font-color": "hsl(52, 100%, 62%)",
+      "--body-bgc": "hsl(268, 75%, 9%)",
+      "--main-element-bgc": "hsl(268, 71%, 12%)",
+      "--screen-bgc": " hsl(268, 71%, 12%)",
+      "--toolls-color": "hsl(52, 100%, 62%)",
+      "--screen-color":"hsl(52, 100%, 62%)"
+    }
+  }
+]
